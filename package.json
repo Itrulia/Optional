@@ -1,0 +1,38 @@
+{
+  "name": "optional",
+  "version": "1.0.0",
+  "description": "Optional is a helper library so you don't have to check for null/undefined all the time.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc -p ./",
+    "test": "npm run build && ava"
+  },
+  "ava": {
+    "files": [
+      "*.spec.js"
+    ],
+    "concurrency": 5,
+    "failFast": true,
+    "verbose": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Itrulia/optional.git"
+  },
+  "keywords": [
+    "optional",
+    "null",
+    "undefined"
+  ],
+  "author": "Karl Merkli <info@karl-merkli.ch>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Itrulia/optional/issues"
+  },
+  "homepage": "https://github.com/Itrulia/optional#readme",
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "typescript": "^2.1.4"
+  }
+}
